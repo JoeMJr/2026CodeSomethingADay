@@ -9,7 +9,8 @@ https://www.sliderrevolution.com/resources/html-calendar/
   function Calendar(selector, events) {
     this.el = document.querySelector(selector);
     this.events = events;
-    this.current = moment().date(1); // I need to rework what was here since I'm not importing moment but again
+    var date = new Date();
+    this.current = new Date(date.getFullYear(), date.getMonth(), 1); // moment().date(1); // I need to rework what was here since I'm not importing moment but again
     this.draw();
     var current = document.querySelector('.today');
     if(current) {
@@ -52,7 +53,8 @@ https://www.sliderrevolution.com/resources/html-calendar/
       this.el.appendChild(this.header);
     }
 
-    this.title.innerHTML = this.current.format('MMMM YYYY');
+    var evilTime = (this.current.getUTCMonth + 1) + " " + this.current.getUTCFullYear.toString()
+    this.title.innerHTML =  evilTime// this.current.format('MMMM YYYY');
   }
 
   Calendar.prototype.drawMonth = function() {
