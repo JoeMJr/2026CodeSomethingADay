@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FebruaryCodeSomethingADay</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="timeline.css">
+        <title>FebruaryCodeSomethingADay</title>
     </head>
     <body>
         <h1>February</h1>
@@ -21,27 +22,41 @@
         </ul>
         <p>Return to the mainpage: <a href="index.html">here</a></p>
         <h2>Progress Throughout the days</h2>
-        <ul>
-            <i>
+        <div class="timeline">
+            <div class="container left">
+                <div class="content">
                 <h3>Feb 1st</h3>
-                <p>I have just spent the time looking over other frameworks, mainly Vue/Nuxt by going through the tutorials present on their websites along with looking through the documentation</p>
-                <p>I've mainly spent this time just organizing the pages here while I prepare for front end February</p>
-                <p>Hoping to just right into Vue/Nuxt tomorrow along with maybe doing some more css work here and for my main github pages.</p>
-            </i>
-            <i>
+                    <p>I have just spent the time looking over other frameworks, mainly Vue/Nuxt by going through the tutorials present on their websites along with looking through the documentation</p>
+                    <p>I've mainly spent this time just organizing the pages here while I prepare for front end February</p>
+                    <p>Hoping to just right into Vue/Nuxt tomorrow along with maybe doing some more css work here and for my main github pages.</p>
+                </div>
+            </div>
+        </div>
+        <ul class="timeline">
+            <div class="container left">
+                <i class="content">
+                    <h3>Feb 1st</h3>
+                    <p>I have just spent the time looking over other frameworks, mainly Vue/Nuxt by going through the tutorials present on their websites along with looking through the documentation</p>
+                    <p>I've mainly spent this time just organizing the pages here while I prepare for front end February</p>
+                    <p>Hoping to just right into Vue/Nuxt tomorrow along with maybe doing some more css work here and for my main github pages.</p>
+                </i>
+            </div>
+            <i class="container right">
                 <h3>Feb 2nd</h3>
                 <p>I mainly just worked on trying to make the calendar work, slowly but surely.</p>
                 <p>I'll also try to set up the styling for these documents.</p>
             </i>
-            <i>
+            <i class="container left">
                 <h3>Feb 3rd</h3>
                 <p>I went back to working on the godot project with my friend</p>
                 <p>I got local multiplayer working but it is still very janky and needs to be polished.</p>
             </i>
-            <i>
+            <i class="container right">
                 <h3>Feb 4th</h3>
                 <p>I had mainly looked over old code along with reviewing my past work to perpare myself for a job fair today</p>
+                <p>I also started working on adding a style sheet for a timeline to this page</p>
             </i>
         </ul>
+        
     </body>
 </html>
