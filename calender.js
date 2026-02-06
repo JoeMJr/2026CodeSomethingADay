@@ -1,16 +1,11 @@
-/* This literally isnt mine, I just don't want to remake this all
-From Event Calendar Widget:
-https://www.sliderrevolution.com/resources/html-calendar/
-*/
 !function() {
 
-  var today = new Date(); // I need to rework what was here since I'm not importing moment
+  var today = moment();
 
   function Calendar(selector, events) {
     this.el = document.querySelector(selector);
     this.events = events;
-    var date = new Date();
-    this.current = new Date(date.getFullYear(), date.getMonth(), 1); // moment().date(1); // I need to rework what was here since I'm not importing moment but again
+    this.current = moment().date(1);
     this.draw();
     var current = document.querySelector('.today');
     if(current) {
@@ -53,13 +48,12 @@ https://www.sliderrevolution.com/resources/html-calendar/
       this.el.appendChild(this.header);
     }
 
-    var evilTime = (this.current.getUTCMonth + 1) + " " + this.current.getUTCFullYear.toString()
-    this.title.innerHTML =  evilTime// this.current.format('MMMM YYYY');
+    this.title.innerHTML = this.current.format('MMMM YYYY');
   }
 
   Calendar.prototype.drawMonth = function() {
     var self = this;
-    
+    // This needs to be changed to have the events not random
     this.events.forEach(function(ev) {
      ev.date = self.current.clone().date(Math.random() * (29 - 1) + 1);
     });
@@ -324,7 +318,7 @@ https://www.sliderrevolution.com/resources/html-calendar/
     return ele;
   }
 }();
-
+// This needs to be changed
 !function() {
   var data = [
     { eventName: 'Lunch Meeting w/ Mark', calendar: 'Work', color: 'orange' },
