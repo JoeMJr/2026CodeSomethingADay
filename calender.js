@@ -319,27 +319,21 @@
   }
 }();
 // This needs to be changed
+// I should also add a field for the day that the 
 !function() {
   var data = [
-    { eventName: 'Lunch Meeting w/ Mark', calendar: 'Work', color: 'orange' },
-    { eventName: 'Interview - Jr. Web Developer', calendar: 'Work', color: 'orange' },
-    { eventName: 'Demo New App to the Board', calendar: 'Work', color: 'orange' },
-    { eventName: 'Dinner w/ Marketing', calendar: 'Work', color: 'orange' },
+    { eventName: 'Basic HTML', calendar: 'FrontEnd', color: 'yellow' },
+    { eventName: 'React', calendar: 'FrontEnd', color: 'yellow' },
+    { eventName: 'Vue', calendar: 'FrontEnd', color: 'yellow' },
+    { eventName: 'PHP', calendar: 'FrontEnd', color: 'yellow' },
 
-    { eventName: 'Game vs Portalnd', calendar: 'Sports', color: 'blue' },
-    { eventName: 'Game vs Houston', calendar: 'Sports', color: 'blue' },
-    { eventName: 'Game vs Denver', calendar: 'Sports', color: 'blue' },
-    { eventName: 'Game vs San Degio', calendar: 'Sports', color: 'blue' },
+    { eventName: 'A Minecraft Mod', calendar: 'Modding', color: 'green' },
 
-    { eventName: 'School Play', calendar: 'Kids', color: 'yellow' },
-    { eventName: 'Parent/Teacher Conference', calendar: 'Kids', color: 'yellow' },
-    { eventName: 'Pick up from Soccer Practice', calendar: 'Kids', color: 'yellow' },
-    { eventName: 'Ice Cream Night', calendar: 'Kids', color: 'yellow' },
+    { eventName: 'Godot Stuff', calendar: "Godot", color: 'blue'},
 
-    { eventName: 'Free Tamale Night', calendar: 'Other', color: 'green' },
-    { eventName: 'Bowling Team', calendar: 'Other', color: 'green' },
-    { eventName: 'Teach Kids to Code', calendar: 'Other', color: 'green' },
-    { eventName: 'Startup Weekend', calendar: 'Other', color: 'green' }
+    { eventName: 'AI Template', calendar: "Backend", color: 'orange'}
+
+    //{ eventName: 'Test Event', calendar: "test", color: ''}
   ];
 
   
